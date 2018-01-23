@@ -1,0 +1,44 @@
+svg{
+  margin:0 auto;
+  display:block;
+}
+
+.str0 {
+  stroke:#E6E6E6;
+  stroke-width:2.36;
+  stroke-miterlimit:22.9256
+}
+.fil0 {
+  fill:none
+}
+.fil2, .fil1 {
+  fill:#666666
+}
+
+circle{
+  fill:red;
+  transition:ease all 600ms;
+}
+
+#graphcolor{
+  fill:rgba(255, 0, 0, 0.5);
+  stroke:red;
+  transition: ease all 600ms;
+}
+
+.data{
+  width: 300px;
+  float:left;
+}
+
+.data input{
+  width: 150px;
+  margin:5px;
+  padding:5px;
+  text-align:center
+}
+
+.data input[type="submit"]{
+  width: 100%;
+  display:block;
+}

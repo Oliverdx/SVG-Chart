@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>Making Charts using SVG</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="function.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<div class="data">
+  <input type="number" min="0" max="4" placeholder="January">
+  <input type="number" min="0" max="4" placeholder="February">
+  <input type="number" min="0" max="4" placeholder="March">
+  <input type="number" min="0" max="4" placeholder="April">
+  <input type="number" min="0" max="4" placeholder="May">
+</div>
+
+
+<div class="graphSVG">
+<svg id="graph" width="700" height="400">
+<g xmlns="http://www.w3.org/2000/svg" id="_2256307831424">
+   <rect class="fil0 str0" x="76.96" y="50" width="573.04" height="268.44"/>
+   <path class="fil0 str0" d="M134.27 50l0 268.44m458.43 -268.44l0 268.44m-57.31 -268.44l0 268.44m-57.3 -268.44l0 268.44m-57.31 -268.44l0 268.44m-57.3 -268.44l0 268.44m-57.3 -268.44l0 268.44m-57.31 -268.44l0 268.44m-57.3 -268.44l0 268.44"/>
+   <path class="fil0 str0" d="M76.96 103.69l573.04 0m0 161.07l-573.04 0m573.04 -53.69l-573.04 0m573.04 -53.69l-573.04 0"/>
+   <g>
+    <text x="130" y="350" class="fil1" id="1">Jan</text>
+    <text x="240" y="350" class="fil1" id="2">Feb</text>
+    <text x="355" y="350" class="fil1" id="3">Mar</text>
+    <text x="470" y="350" class="fil1" id="4">Apr</text>
+    <text x="585" y="350" class="fil1" id="5">May</text>
+   </g>
+   <g>
+    <text x="50" y="325" class="fil2 fnt0">0</text>
+    <text x="50" y="270" class="fil2 fnt0">1</text>
+    <text x="50" y="215" class="fil2 fnt0">2</text>
+    <text x="50" y="165" class="fil2 fnt0">3</text>
+    <text x="50" y="110" class="fil2 fnt0">4</text>
+    <text x="50" y="55" class="fil2 fnt0">5</text>
+   </g>
+  </g>
+  
+  <g class="data">
+    <circle r="4" cx="135" cy="320" class="dot1"></circle>
+    <circle r="4" cx="245" cy="320" class="dot2"></circle>
+    <circle r="4" cx="360" cy="320" class="dot3"></circle>
+    <circle r="4" cx="475" cy="320" class="dot4"></circle> 
+    <circle r="4" cx="590" cy="320" class="dot5"></circle>
+  </g>
+  
+  <path id="graphcolor" d="M75,320 L135,320 245,320 360,320 475,320 590,320 650,320" />
+  
+</svg>
+  
+  </div>
+
+  <script>
+  
+  $(document).ready(function(){
+
+    $('.data input').change(function(){
+        changeDot( $(this).index(), $(this).val() ); //Call the function passing the Index of the input and the value
+    });
+
+  });
+
+  </script>
+
+</body>
+</html>
